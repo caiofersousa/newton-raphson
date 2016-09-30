@@ -1,0 +1,98 @@
+body {
+	font: 400 13px/1 'Open Sans', sans-serif;
+}
+
+#form-newton {
+	border: 1px solid #666;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	width: auto;
+	max-height: 90vh;
+	overflow: auto;
+
+	transform: translate(-50%, -50%);
+}
+
+#form-newton input {
+	border: 0 none;
+	border-bottom: 1px solid #666;
+	box-shadow: none;
+	text-align: right;
+	width: 200px;
+}
+
+#form-newton input:focus {
+	outline: none;
+}
+
+.annotations path {
+    stroke: #3c85d8;
+}
+
+.function-plot {
+    margin-top: 20px;
+}
+
+.infos {
+    display: none;
+}
+
+.infos.on {
+	padding: 0 20px;
+    display: flex;
+	justify-content: space-between;
+}
+
+.iteracoes {
+    position: absolute;
+    top: 370px;
+    right: 50px;
+}
+
+.iteracoes strong {
+    color: blue;
+	margin-left: 5px;
+	font-weight: 400;
+}
+
+.chutes, .raizes, .iteracoes {
+	font-size: 13px;
+    font-weight: 700;
+    align-items: flex-start;
+    display: flex;
+    max-width: 50%;
+}
+
+.chutes ul, .raizes ul {
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chutes ul:before, .raizes ul:before {
+    content: '[';
+}
+
+.chutes ul:after, .raizes ul:after {
+    content: ']';
+}
+
+.chutes li, .raizes li {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+}
+
+.chutes li:after, .raizes li:after {
+    content: ',';
+    margin-right: 5px;
+}
+
+.chutes li:last-child:after, .raizes li:last-child:after {
+	display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newton Raphson</title>
+	<meta charset="utf-8">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<form name="newton" id="form-newton">
+		<span class="formula">
+            <input id="fun-1" type="hidden" value="x^2 - x + sin(5 * x)"/>
+            <input id="der-1" type="hidden" value="2 * x - 1 + 5 * cos(5 * x)"/>
+            <input id="fun-2" type="hidden" value="-x^2 - 3.15122 * x + 37.104740"/>
+            <input id="der-2" type="hidden" value="-2 * x - 3.15122"/>
+            <input id="fun-3" type="hidden" value="(1/48) * (693*x^6 - 945*x^4 + 315*x^2 - 15)"/>
+            <input id="der-3" type="hidden" value="4158*x^5 - 3780*x^3 + 630*x"/>
+
+            <select name="" id="functions-list">
+                <option value="1">Trabalho 1</option>
+                <option value="2">Exercício 1</option>
+                <option value="3">Exercício 2</option>
+            </select>
+			<input name="a" type="text" id="funcao" value="" placeholder="Informe a Função" />
+            <input name="a" type="text" id="derivada" value="" placeholder="Informe a Derivada" />
+		</span>		
+		<button type="button" class="button">OK</button>
+        <div class="graph">
+
+        </div>
+        <div class="infos">
+            <span class="iteracoes">
+                Iterações: <strong></strong>
+            </span>
+            <span class="chutes">
+                Chutes: <ul class="chutes-list"></ul>
+            </span>
+            <span class="raizes">
+                Raizes: <ul class="raizes-list"></ul>
+            </span>
+        </div>
+
+	</form>
+
+	<script src="jquery/jquery-1.8.3.min.js"></script>
+    <script src="js/math.min.js" type="text/javascript"></script>
+    <script src="js/d3.min.js" type="text/javascript"></script>
+    <script src="js/function-plot@1.14.0" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+
+</script>
